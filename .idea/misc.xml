@@ -5,6 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/netty-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/netty-http/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-springboot-protobuf/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-jpa-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-server/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

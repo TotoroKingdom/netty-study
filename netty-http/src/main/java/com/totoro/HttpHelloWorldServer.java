@@ -1,6 +1,7 @@
 package com.totoro;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -31,7 +32,14 @@ public class HttpHelloWorldServer {
                     .handler(new LoggingHandler(LogLevel.INFO))
                     .childHandler(new HttpHelloWorldServerInitializer());
 
-
+            Channel ch = b.bind(PORT).sync().channel();
+            log.info("Netty http server listening on port " + PORT);
+            ch.closeFuture().sync();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
         }
     }
 }
