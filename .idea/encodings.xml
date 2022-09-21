@@ -9,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/netty-jpa-mysql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-springboot-protobuf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-base/src/main/java" charset="UTF-8" />
   </component>
 </project>
