@@ -3,9 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/netty-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-helloworld/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-helloworld/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-http/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-http/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-jpa-mysql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-springboot-protobuf/src/main/java" charset="UTF-8" />
