@@ -20,9 +20,7 @@ public class TestByteBuffer {
                 if (read == -1){
                     break;
                 }
-                System.out.println("====");
                 buffer.flip();
-
                 while (buffer.hasRemaining()){
                     byte b = buffer.get();
                     System.out.println((char) b);
