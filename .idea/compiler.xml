@@ -7,16 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="nio-base" />
-        <module name="netty-http" />
+        <module name="netty-demo-intermediate" />
         <module name="netty-springboot-protobuf" />
         <module name="netty-client" />
+        <module name="netty-demo-advance" />
         <module name="netty-jpa-mysql" />
+        <module name="netty-demo-basic" />
+        <module name="nio-base" />
+        <module name="netty-http" />
         <module name="netty-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="netty-client" target="1.8" />
+      <module name="netty-demo-advance" target="1.8" />
+      <module name="netty-demo-basic" target="1.8" />
+      <module name="netty-demo-intermediate" target="1.8" />
       <module name="netty-hello" target="1.8" />
       <module name="netty-helloworld" target="6" />
       <module name="netty-http" target="1.5" />
@@ -29,6 +35,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="netty-client" options="-parameters" />
+      <module name="netty-demo-advance" options="-parameters" />
+      <module name="netty-demo-basic" options="-parameters" />
+      <module name="netty-demo-intermediate" options="-parameters" />
       <module name="netty-hello" options="-parameters" />
       <module name="netty-jpa-mysql" options="-parameters" />
       <module name="netty-server" options="-parameters" />
