@@ -1,10 +1,13 @@
 package com.totoro.test2.demo;
 
+import lombok.Data;
+
 /**
  * @author:totoro
  * @createDate:2022/11/23
  * @description:
  */
+@Data
 public class WxUser implements Observer{
 
     private String name;
