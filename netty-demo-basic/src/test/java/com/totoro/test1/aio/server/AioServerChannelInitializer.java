@@ -4,6 +4,7 @@ import com.totoro.test1.aio.ChannelInitializer;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;
+import java.nio.channels.spi.AbstractSelectableChannel;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @createDate:2022/11/23
  * @description:
  */
-public class AioServerChannelInitializer extends ChannelInitializer {
+public class AioServerChannelInitializer extends ChannelInitializer<AbstractSelectableChannel> {
     @Override
     protected void initChannel(AsynchronousSocketChannel channel) throws Exception {
         channel.read(ByteBuffer.allocate(1024), 10, TimeUnit.SECONDS, null,

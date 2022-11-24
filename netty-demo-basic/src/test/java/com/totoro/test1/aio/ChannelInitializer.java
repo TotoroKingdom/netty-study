@@ -4,13 +4,14 @@ import com.totoro.test1.aio.server.AioServer;
 
 import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
+import java.nio.channels.spi.AbstractSelectableChannel;
 
 /**
  * @author:totoro
  * @createDate:2022/11/17
  * @description:
  */
-public abstract class ChannelInitializer implements CompletionHandler<AsynchronousSocketChannel, AioServer> {
+public abstract class ChannelInitializer<S extends AbstractSelectableChannel> implements CompletionHandler<AsynchronousSocketChannel, AioServer> {
 
 
     @Override
