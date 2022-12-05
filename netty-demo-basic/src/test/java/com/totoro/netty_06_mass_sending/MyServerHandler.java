@@ -1,4 +1,4 @@
-package com.totoro.netty_05_encoder;
+package com.totoro.netty_06_mass_sending;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -10,19 +10,21 @@ import java.time.LocalDateTime;
 
 /**
  * @author:totoro
- * @createDate:2022/11/24
+ * @createDate:2022/12/5
  * @description:
  */
 public class MyServerHandler extends ChannelInboundHandlerAdapter {
+
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+
+        ChannelHandler.channelGroup.add(ctx.channel());
+
         SocketChannel channel = (SocketChannel) ctx.channel();
-        System.out.println("有客户端连接成功："+channel.localAddress().getHostString());
-        System.out.println("port："+channel.localAddress().getPort());
+        System.out.println("有客户端连接成功："+channel.remoteAddress().getHostString());
+        System.out.println("port："+channel.remoteAddress().getPort());
 
         String response = "你好，恭喜你连接服务器成功！\r\n";
-//        ByteBuf buffer = Unpooled.buffer(response.getBytes().length);
-//        buffer.writeBytes(response.getBytes("GBK"));
         ctx.writeAndFlush(response);
     }
 
@@ -33,12 +35,11 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        SocketChannel channel = (SocketChannel) ctx.channel();
         System.out.println("收到客户端的消息：" + LocalDateTime.now() + ":" + msg);
 
-        String response = "我收到消息了！\r\n";
-        ByteBuf buffer = Unpooled.buffer(response.getBytes().length);
-        buffer.writeBytes(response.getBytes("GBK"));
-        ctx.writeAndFlush(response);
+        String res = channel.remoteAddress().getPort() + ": " + msg;
+        ChannelHandler.channelGroup.writeAndFlush(res);
     }
 
     @Override

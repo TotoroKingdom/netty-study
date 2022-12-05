@@ -17,11 +17,11 @@ public class AioClient {
 
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
         AsynchronousSocketChannel socketChannel = AsynchronousSocketChannel.open();
-        Future<Void> future = socketChannel.connect(new InetSocketAddress("localhost", 10003));
+        Future<Void> future = socketChannel.connect(new InetSocketAddress("localhost", 10006));
         System.out.println("client start done");
         future.get();
         socketChannel.read(ByteBuffer.allocate(1024), null, new AioClientHandler(socketChannel, Charset.forName("GBK")));
-        Thread.sleep(10000);
+        Thread.sleep(1000000);
     }
 
 }

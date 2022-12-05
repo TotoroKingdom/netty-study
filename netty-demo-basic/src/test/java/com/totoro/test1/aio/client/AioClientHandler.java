@@ -24,7 +24,7 @@ public class AioClientHandler extends ChannelAdapter {
 
         try {
             System.out.println("ctx:" + ctx.channel().getRemoteAddress());
-            ctx.writeAndFlush("hello 我是客户端，初次连接，多多招股\r\n");
+            ctx.writeAndFlush("hello 我是客户端，初次连接，多多照顾\r\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -39,6 +39,6 @@ public class AioClientHandler extends ChannelAdapter {
     @Override
     public void channelRead(ChannelHandler ctx, Object msg) {
         System.out.println("服务器发来的消息："+msg+"\r\n");
-        ctx.writeAndFlush("我是客户端回复的消息\r\n");
+//        ctx.writeAndFlush("我是客户端回复的消息\r\n");
     }
 }
