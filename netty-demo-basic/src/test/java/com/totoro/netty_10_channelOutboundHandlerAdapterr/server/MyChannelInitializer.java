@@ -1,4 +1,4 @@
-package com.totoro.netty_08_client_handler;
+package com.totoro.netty_10_channelOutboundHandlerAdapterr.server;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
@@ -8,22 +8,21 @@ import io.netty.handler.codec.string.StringEncoder;
 
 import java.nio.charset.Charset;
 
+
 /**
  * @author:totoro
- * @createDate:2022/12/6
+ * @createDate:2022/12/9
  * @description:
  */
 public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
+
     @Override
     protected void initChannel(SocketChannel channel) throws Exception {
 
         channel.pipeline().addLast(new LineBasedFrameDecoder(1024));
-
         channel.pipeline().addLast(new StringDecoder(Charset.forName("GBK")));
-
         channel.pipeline().addLast(new StringEncoder(Charset.forName("GBK")));
-
-        channel.pipeline().addLast(new MyClientHandler());
+        channel.pipeline().addLast(new MyServerHandler());
 
     }
 }

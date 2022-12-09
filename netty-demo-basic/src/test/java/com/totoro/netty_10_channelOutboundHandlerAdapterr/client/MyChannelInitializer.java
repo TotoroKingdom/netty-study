@@ -1,4 +1,4 @@
-package com.totoro.netty_08_client_handler;
+package com.totoro.netty_10_channelOutboundHandlerAdapterr.client;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
@@ -10,20 +10,20 @@ import java.nio.charset.Charset;
 
 /**
  * @author:totoro
- * @createDate:2022/12/6
+ * @createDate:2022/12/9
  * @description:
  */
 public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel channel) throws Exception {
-
         channel.pipeline().addLast(new LineBasedFrameDecoder(1024));
 
         channel.pipeline().addLast(new StringDecoder(Charset.forName("GBK")));
 
         channel.pipeline().addLast(new StringEncoder(Charset.forName("GBK")));
 
-        channel.pipeline().addLast(new MyClientHandler());
+        channel.pipeline().addLast(new MyOutMsgHandler());//消息出栈处理器，发送消息时触发。
 
+        channel.pipeline().addLast(new MyInMsgHandler());//入栈处理器
     }
 }
