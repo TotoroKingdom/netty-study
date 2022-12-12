@@ -12,6 +12,7 @@
         <module name="netty-client" />
         <module name="netty-demo-advance" />
         <module name="netty-jpa-mysql" />
+        <module name="netty-java-object" />
         <module name="netty-demo-basic" />
         <module name="nio-base" />
         <module name="netty-http" />
@@ -26,6 +27,7 @@
       <module name="netty-hello" target="1.8" />
       <module name="netty-helloworld" target="6" />
       <module name="netty-http" target="1.5" />
+      <module name="netty-java-object" target="1.8" />
       <module name="netty-jpa-mysql" target="1.8" />
       <module name="netty-server" target="1.8" />
       <module name="netty-springboot-protobuf" target="1.8" />
@@ -39,6 +41,7 @@
       <module name="netty-demo-basic" options="-parameters" />
       <module name="netty-demo-intermediate" options="-parameters" />
       <module name="netty-hello" options="-parameters" />
+      <module name="netty-java-object" options="-parameters" />
       <module name="netty-jpa-mysql" options="-parameters" />
       <module name="netty-server" options="-parameters" />
       <module name="netty-springboot-protobuf" options="-parameters" />
