@@ -3,27 +3,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/netty-helloworld/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-http/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-springboot-protobuf/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-jpa-mysql/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-server/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-client/pom.xml" />
-        <option value="$PROJECT_DIR$/nio-base/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-demo-basic/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-demo-intermediate/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-demo-advance/pom.xml" />
+        <option value="$PROJECT_DIR$/neety-web-socket/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-web-socket/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/netty-helloworld/netty-http/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

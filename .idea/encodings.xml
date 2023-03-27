@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/netty-client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-demo-advance/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-demo-basic/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-demo-intermediate/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-helloworld/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-http/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-java-file/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-java-object/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-jpa-mysql/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/netty-springboot-protobuf/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/nio-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-web-socket/src/main/java" charset="UTF-8" />
   </component>
 </project>

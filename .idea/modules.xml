@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/netty-client/netty-client.iml" filepath="$PROJECT_DIR$/netty-client/netty-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-demo-advance/netty-demo-advance.iml" filepath="$PROJECT_DIR$/netty-demo-advance/netty-demo-advance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-demo-basic/netty-demo-basic.iml" filepath="$PROJECT_DIR$/netty-demo-basic/netty-demo-basic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-demo-intermediate/netty-demo-intermediate.iml" filepath="$PROJECT_DIR$/netty-demo-intermediate/netty-demo-intermediate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-helloworld/netty-helloworld.iml" filepath="$PROJECT_DIR$/netty-helloworld/netty-helloworld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-jpa-mysql/netty-jpa-mysql.iml" filepath="$PROJECT_DIR$/netty-jpa-mysql/netty-jpa-mysql.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-server/netty-server.iml" filepath="$PROJECT_DIR$/netty-server/netty-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-springboot-protobuf/netty-springboot-protobuf.iml" filepath="$PROJECT_DIR$/netty-springboot-protobuf/netty-springboot-protobuf.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nio-base/nio-base.iml" filepath="$PROJECT_DIR$/nio-base/nio-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/netty-study.iml" filepath="$PROJECT_DIR$/.idea/netty-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-web-socket/netty-web-socket.iml" filepath="$PROJECT_DIR$/netty-web-socket/netty-web-socket.iml" />
     </modules>
   </component>
 </project>
