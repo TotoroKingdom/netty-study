@@ -8,14 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty-web-socket" />
+        <module name="netty-heartbeat" />
+        <module name="netty-synchronous-communication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="netty-heartbeat" target="1.8" />
+      <module name="netty-synchronous-communication" target="1.8" />
       <module name="netty-web-socket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="netty-heartbeat" options="-parameters" />
+      <module name="netty-synchronous-communication" options="-parameters" />
       <module name="netty-web-socket" options="-parameters" />
     </option>
   </component>

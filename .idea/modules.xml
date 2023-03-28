@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" filepath="$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/netty-study.iml" filepath="$PROJECT_DIR$/.idea/netty-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-synchronous-communication/netty-synchronous-communication.iml" filepath="$PROJECT_DIR$/netty-synchronous-communication/netty-synchronous-communication.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-web-socket/netty-web-socket.iml" filepath="$PROJECT_DIR$/netty-web-socket/netty-web-socket.iml" />
     </modules>
   </component>

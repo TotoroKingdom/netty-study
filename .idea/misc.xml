@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/neety-web-socket/pom.xml" />
         <option value="$PROJECT_DIR$/netty-web-socket/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-synchronous-communication/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-heartbeat/pom.xml" />
       </list>
     </option>
   </component>
