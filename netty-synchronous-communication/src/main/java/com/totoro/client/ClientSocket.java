@@ -6,7 +6,6 @@ import com.totoro.msg.Request;
 import com.totoro.msg.Response;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -26,6 +25,7 @@ public class ClientSocket implements Runnable {
     public void run() {
 
         NioEventLoopGroup workerGroup = new NioEventLoopGroup();
+
         try {
             Bootstrap b = new Bootstrap();
             b.group(workerGroup);
